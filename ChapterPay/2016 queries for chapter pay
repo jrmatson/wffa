@@ -1,0 +1,99 @@
+-----------------
+/*  chapter pay */
+select s1.chapter, s1.MembershipType, s1.NumberOfMemberships, s1.Total$
+, ifnull(s2.MembershipType,0), ifnull(s2.NumberOfMemberships,0), ifnull(s2.Total$,0)
+, ifnull(s3.MembershipType,null), ifnull(s3.NumberOfMemberships,0), ifnull(s3.Total$,0)
+from
+(SELECT csup.local_chapter_12 Chapter, cmt.name MembershipType
+, count(cm.membership_type_id) NumberOfMemberships
+, count(cm.membership_type_id)*5 Total$
+FROM civicrm_membership cm
+, civicrm_membership_type cmt
+, civicrm_value_wffa_supplement_1 csup
+where cm.contact_id in
+(SELECT contact_id FROM civicrm_contribution where receive_date >= '2012-10-01' and receive_date <= '2013-03-31')
+and cm.membership_type_id = cmt.id
+and cmt.id in (1,5)
+and cm.contact_id = csup.entity_id
+group by csup.local_chapter_12, membership_type_id) s1
+,
+(SELECT csup.local_chapter_12 Chapter, cmt.name MembershipType
+, count(cm.membership_type_id) NumberOfMemberships
+, count(cm.membership_type_id)*10 Total$
+FROM civicrm_membership cm
+, civicrm_membership_type cmt
+, civicrm_value_wffa_supplement_1 csup
+where cm.contact_id in
+(SELECT contact_id FROM civicrm_contribution where receive_date >= '2012-10-01' and receive_date <= '2013-03-31')
+and cm.membership_type_id = cmt.id
+and cmt.id in (2)
+and cm.contact_id = csup.entity_id
+group by csup.local_chapter_12, membership_type_id) s2
+,
+(SELECT csup.local_chapter_12 Chapter, cmt.name MembershipType
+, count(cm.membership_type_id) NumberOfMemberships
+, count(cm.membership_type_id)*15 Total$
+FROM civicrm_membership cm
+, civicrm_membership_type cmt
+, civicrm_value_wffa_supplement_1 csup
+where cm.contact_id in
+(SELECT contact_id FROM civicrm_contribution where receive_date >= '2012-10-01' and receive_date <= '2013-03-31')
+and cm.membership_type_id = cmt.id
+and cmt.id in (3)
+and cm.contact_id = csup.entity_id
+group by csup.local_chapter_12, membership_type_id) s3
+where s1.chapter=s2.chapter
+and s1.chapter=s3.chapter
+order by s1.chapter;
+
+/* another approach */
+SELECT csup.local_chapter_12 Chapter
+, cmt.name Type
+, count(cm.contact_id) cnt
+, count(cm.contact_id)*5 $
+FROM civicrm_membership cm
+, civicrm_membership_type cmt
+, civicrm_value_wffa_supplement_1 csup
+where cm.owner_membership_id is null
+and cm.contact_id in
+(SELECT contact_id FROM civicrm_contribution where receive_date >= '2012-10-01' and receive_date <= '2013-03-31')
+and cm.membership_type_id = cmt.id
+and cmt.id in (1)
+and cm.contact_id = csup.entity_id
+group by csup.local_chapter_12, cmt.name
+order by csup.local_chapter_12, cmt.name
+;
+
+
+
+
+
+
+/* additional chapters*/
+SELECT * FROM civicrm_value_trial_2
+where  entity_id in 
+(SELECT cm.contact_id
+FROM civicrm_membership cm
+, civicrm_membership_type cmt
+where cm.owner_membership_id is null
+and cm.contact_id in
+(SELECT contact_id FROM civicrm_contribution where receive_date >= '2012-10-01' and receive_date <= '2013-03-31')
+and cm.membership_type_id = cmt.id
+and cmt.id in (1,2,3,4,5))
+and (
+blue_mtns_13 = 1
+or clark_14 = 1
+or cowlitz_15 = 1
+or grays_harbor_16 = 1
+or kittitas_17 = 1
+or lewis_18 = 1
+or mt_adams_19 = 1
+or north_central_20 = 1
+or northeast_washington_21 = 1
+or olympic_22 = 1
+or pacific_23 = 1
+or pierce_24 = 1
+or south_sound_25 = 1
+or spokane_26 = 1
+or upper_puget_sound_27 = 1
+or whatcom_28 = 1)
