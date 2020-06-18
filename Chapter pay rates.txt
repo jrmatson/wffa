@@ -1,0 +1,9 @@
+Chapter payments per membership type
+
+Additional          $5
+Associate           $5
+GenMemA             $5
+GenMemB             $10
+GenMemC             $15
+New LifeMem         $150
+

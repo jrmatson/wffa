@@ -1,0 +1,27 @@
+#! /usr/bin/perl
+use CGI;
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=67" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=68" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=69" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=70" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=71" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=72" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=73" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=74" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=75" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=76" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=77" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=78" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=79" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=80" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=81" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=82" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=83" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=84" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=90" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=91" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=92" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=93" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=94" "format=csv"');
+system('/chroot/drush/drush -u 1 -r ~/public_html -l www.wafarmforestry.com civicrm-api job.mail_report --in "instanceId=104" "format=csv"');
+exit (0);

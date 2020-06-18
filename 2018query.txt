@@ -1,0 +1,12 @@
+select cc.last_name Last_name, cc.first_name First_name, pf.label Item, pfv.label Choice, cli.qty Qty 
+from civicrm_contact cc, civicrm_participant cp,  civicrm_line_item cli, civicrm_price_field pf, civicrm_price_field_value pfv, civicrm_event ce
+where cli.entity_table = 'civicrm_participant'
+and cli.entity_id = cp.id 
+and cp.status_id in (1,14)
+and cp.contact_id = cc.id
+and cli.price_field_id = pf.id
+and cli.price_field_value_id = pfv.id
+and cp.event_id = ce.id
+and ce.is_active = 1
+order by cc.last_name, cc.first_name, pf.weight, pfv.weight
+

@@ -1,0 +1,18 @@
+all:	info@wafarmforestry.com, membership@wafarmforestry.com,execdir@wafarmforestry.com
+at-large:	jrmatson@wafarmforestry.com 
+bluemtn: gnstimber@yahoo.com
+clark:	anitra.gorham@gmail.com,lgwworks@gmail.com, davenpor@owt.com, bobjbrink@gmail.com, betsymckee@pomeroyfarm.org
+cowlitz:	circleb53@gmail.com, cowlitzfarmforestry@gmail.com
+grays:	wilsonhs@aol.com, wjstewart@techline.com  ***** wjstewart address not in sys
+kittitas:	hessphil09@gmail.com, pos_treefarm@yahoo.com
+lewis:	loucksd@localaccess.com, prvance2@gmail.com, dpowell@portblakely.com
+mtadams:	jwhite.mars@gmail.com
+nc:	slideruleaccuracy@gmail.com, watfoy2012@hughes.net, stan.janowicz@wa.usda.gov
+newa:	watfoy2012@hughes.net, patti.playfair@gmail.com, billberr@theofficenet.com, emtfire1269@gmail.com
+olympic:	alesr_j@yahoo.com, samjoystock@gmail.com,vchesterley@gmail.com **** vchesterley non in sys
+pacific:	sci@willapabay.org,pattree@willapabay.org, mussapfor@yahoo.com,custercreek@gmail.com
+pierce:	hopkinsforestry@yahoo.com,blueribbonfarm@tx3.net, rodgersjeffrey@hotmail.com,bob_loiselle@yahoo.com
+ssound:	kenbonniemiller@gmail.com, nfgreen@reachone.com, jaib7@msn.com, brianl4802@aol.com
+spokane:	rl.burke@hotmail.com,anapp@comcast.net
+ups:	blayton420@gmail.com,ozlynjp@msn.com, wwilliamwoods@gmail.com, jvobiglake1@msn.com, cholland@jonesstevedoring.com, belletruffle@comcast.net
+whatcom:	tomwestergreen@hotmail.com, patmar.mitchell@gmail.com,assinkd@aol.com,kabellingar@gmail.com,barkers.chipping@gmail.com,xylonia@gmail.com **** bellingar and barkers.chipping are not in sys
